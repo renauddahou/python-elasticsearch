@@ -11,9 +11,11 @@ CORS(app)
 
 @app.route('/talents/')
 def get_all_talents():
-    return es.search(
-        index=TALENTS
+    results = es.search(
+        index=TALENTS,
+        size=1000
     )
+    return results['hits']['hits']
 
 
 @app.route('/talents/<name>', methods=['POST', 'GET', 'PUT'])
