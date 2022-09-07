@@ -1,1 +1,2 @@
 TALENTS = 'talents'
+SKILLS = 'skills'
