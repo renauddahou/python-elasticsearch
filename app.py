@@ -13,6 +13,7 @@ from routes.equipment import armor_routes
 from routes.actor import nemesis_routes
 from routes.lore import lore_routes
 from routes.equipment import weapon_routes
+from routes.equipment import gear_routes
 
 if __name__ == '__main__':
     app.run()
